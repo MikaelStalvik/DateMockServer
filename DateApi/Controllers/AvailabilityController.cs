@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
 
 namespace DateApi.Controllers
 {
@@ -51,11 +50,13 @@ namespace DateApi.Controllers
             var availability = GetAvailability(market);
 
             var timeZoneInfo = TimeZoneInfo.FindSystemTimeZoneById(availability.TimeZoneId);
-            var result = new ConvertedAvailability();
-            result.TimeZoneId = availability.TimeZoneId;
-            result.UtcOffset = (int)timeZoneInfo.BaseUtcOffset.TotalHours * 60;
-            result.Days = new List<ConvertedDay>();
-            foreach(var day in availability.Days)
+            var result = new ConvertedAvailability
+            {
+                TimeZoneId = availability.TimeZoneId,
+                UtcOffset = (int)timeZoneInfo.BaseUtcOffset.TotalHours * 60,
+                Days = new List<ConvertedDay>()
+            };
+            foreach (var day in availability.Days)
             {
                 var convertedDay = new ConvertedDay
                 {
