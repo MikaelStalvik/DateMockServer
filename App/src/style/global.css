@@ -1,0 +1,44 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #999999;
+  --black-metal: #292827;
+  --pink-hot: #fe0096;
+  --yellow-attention: #e0dd00;
+  --green-power: #08f105;
+  --red-fire: #e64d4b;
+
+  --space-small: 4px;
+  --space-medium: 8px;
+  --space-big: 16px;
+
+  --font-size-medium: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: var(--font-size-medium);
+  background: var(--black-metal);
+  color: var(--white);
+}

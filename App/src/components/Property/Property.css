@@ -1,0 +1,12 @@
+.Property {
+  margin-bottom: var(--space-medium);
+}
+
+.Property-label {
+  font-weight: 600;
+  margin-bottom: var(--space-small);
+  color: var(--yellow-attention);
+}
+
+.Property-value {
+}

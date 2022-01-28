@@ -1,3 +1,6 @@
 .vs/
 DateApi/bin/
 DateApi/obj/
+
+App/build
+App/node_modules

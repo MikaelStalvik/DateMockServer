@@ -1,0 +1,12 @@
+.DaySlot {
+  padding: var(--space-small);
+  cursor: pointer;
+}
+
+.DaySlot:hover {
+  color: var(--pink-hot);
+}
+
+.DaySlot-raw {
+  color: var(--grey);
+}

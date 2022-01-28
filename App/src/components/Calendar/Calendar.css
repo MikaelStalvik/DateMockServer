@@ -1,0 +1,15 @@
+.Calendar {
+}
+
+.Calendar-slots-section {
+  margin-top: var(--space-big);
+}
+
+.Calendar-slots-header {
+  color: var(--pink-hot);
+}
+
+.Calendar-slots-list {
+  padding: 0;
+  list-style-type: none;
+}

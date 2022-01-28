@@ -1,0 +1,12 @@
+.CalendarDay {
+  margin-bottom: var(--space-big);
+}
+
+.CalendarDay-date {
+  margin-bottom: var(--space-medium);
+  font-weight: 600;
+}
+
+.CalendarDay-list {
+  list-style-type: disc;
+}

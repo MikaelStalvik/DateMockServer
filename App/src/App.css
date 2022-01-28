@@ -1,0 +1,16 @@
+.App {
+}
+
+.App-layout {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.App-calendar {
+  width: 400px;
+}
+
+.App-request {
+  width: 400px;
+}
