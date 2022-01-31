@@ -15,7 +15,7 @@ function DaySlot({ slot, onClick }: DaySlotProps) {
   return (
     <li className="DaySlot" onClick={onClick}>
       <p>
-        {startTime.format("HH:mm")}{" "}
+        {startTime.utc().format("HH:mm")}{" "}
         <span className="DaySlot-raw">({slot.startTime})</span>
       </p>
     </li>

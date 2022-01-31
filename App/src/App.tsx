@@ -1,4 +1,7 @@
 import * as dayjs from "dayjs";
+import * as utc from "dayjs/plugin/utc";
+dayjs.extend(utc); // use plugin
+
 import { ChangeEvent, useEffect, useState } from "react";
 import { getAvailableSlots } from "./api/calendar";
 
